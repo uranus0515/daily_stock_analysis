@@ -3,8 +3,9 @@ name: 每日股票分析
 on:
   # 定时触发 - 每天北京时间 18:00 (UTC 10:00)
   schedule:
-    - cron: '0 3 * * 1-5'
-    - cron: '30 6 * * 1-5'
+      - cron: '7 3 * * 1-5'     # 北京时间 11:07
+      - cron: '37 6 * * 1-5'    # 北京时间 14:37
+  
   # 手动触发
   workflow_dispatch:
     inputs:
